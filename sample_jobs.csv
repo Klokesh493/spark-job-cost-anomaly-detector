@@ -1,0 +1,4 @@
+job_name,team,executor_hours,cost_usd,baseline_cost_usd,retries
+daily-feature-build,ml-platform,240,430,300,1
+ranking-training,relevance,900,1800,1100,4
+sessionization,analytics,120,180,200,0
