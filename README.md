@@ -24,4 +24,16 @@ Run `make verify` with Make and Python 3 installed. The target runs the document
 
 ## Project walkthrough
 
+```mermaid
+flowchart LR
+    A["Spark job cost, retries, and executor hours"]
+    B["Check cost ratio, retry count, and compute thresholds"]
+    C{"Anomaly reason found?"}
+    D["Emit job, owner team, and reason codes"]
+    E["Omit healthy job"]
+    A --> B --> C
+    C -->|Yes| D
+    C -->|No| E
+```
+
 [Architecture and data flow](docs/ARCHITECTURE.md) · [Business problem, demo, and verification](docs/CASE_STUDY.md)

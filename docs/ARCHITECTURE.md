@@ -4,11 +4,14 @@ Detects Spark training and feature engineering jobs whose runtime cost or retry 
 
 ```mermaid
 flowchart LR
-    N0["sample_jobs.csv"]
-    N1["spark_cost_anomaly.py"]
-    N2["cost ratio / anomaly reasons / anomalous jobs"]
-    N3["Result for operator review"]
-    N0 --> N1 --> N2 --> N3
+    A["Spark job cost, retries, and executor hours"]
+    B["Check cost ratio, retry count, and compute thresholds"]
+    C{"Anomaly reason found?"}
+    D["Emit job, owner team, and reason codes"]
+    E["Omit healthy job"]
+    A --> B --> C
+    C -->|Yes| D
+    C -->|No| E
 ```
 
 ## Operational boundaries
