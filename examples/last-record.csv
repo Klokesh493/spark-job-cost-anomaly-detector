@@ -1,0 +1,2 @@
+job_name,team,executor_hours,cost_usd,baseline_cost_usd,retries
+sessionization,analytics,120,180,200,0
