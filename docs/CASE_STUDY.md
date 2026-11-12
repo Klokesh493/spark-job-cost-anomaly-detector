@@ -2,7 +2,7 @@
 
 ## Business problem
 
-Detects Spark training and feature engineering jobs whose runtime cost or retry behavior is outside expected bounds.
+A Spark workload can finish successfully while a retry storm or resource spike drives cost above its baseline.
 
 ## Reproduce the workflow
 

@@ -22,6 +22,10 @@ python3 -m unittest discover . -v
 
 Run `make verify` with Make and Python 3 installed. The target runs the documented sample through the project CLI. It also runs the existing Python unit tests.
 
+## Business problem
+
+A Spark workload can finish successfully while a retry storm or resource spike drives cost above its baseline.
+
 ## Project walkthrough
 
 ```mermaid
