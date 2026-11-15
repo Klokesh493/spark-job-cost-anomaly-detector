@@ -2,6 +2,8 @@
 
 A Spark workload can finish successfully while a retry storm or resource spike drives cost above its baseline.
 
+[Skills and verification](docs/ENGINEERING_NOTES.md)
+
 ## What I built
 
 I built a Spark cost review tool that checks cost against baseline, retry count, and executor hours. Its report lists each anomalous job with the reasons operators can investigate.
